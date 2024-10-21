@@ -1,0 +1,28 @@
+.img-wrapper {
+  overflow: hidden;
+  border-radius: 0.5em;
+  box-shadow: 1px 2px 5px rgb(147, 147, 147);
+  width: 30em;
+
+  .exp-img {
+    width: 100%;
+    transition: all linear 150ms;
+  }
+}
+
+a:hover {
+  .exp-img {
+    transform: scale(0.98);
+  }
+}
+
+.tech-wrapper {
+  display: inline-flex;
+  gap: 0.5em;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.desc {
+  font-weight: 300;
+}
