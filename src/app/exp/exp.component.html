@@ -1,21 +1,26 @@
 <p-timeline [value]="exp">
+  <ng-template pTemplate="marker">
+    <span class="marker" [style]="{ 'background-color': 'black' }">
+      <i class="pi pi-circle-on"></i>
+    </span>
+  </ng-template>
   <ng-template pTemplate="content" let-exp>
+    @if (exp.src) {
     <a [href]="exp.link" target="_blank">
-      @if (exp.src) {
       <div class="img-wrapper">
         <img class="exp-img" [src]="exp.src" alt="" />
       </div>
-      }
-      <p class="desc">{{ exp.desc }}</p>
-      @if(exp.tech) {
-      <div class="tech-wrapper">
-        <h3>Tech Stack:</h3>
-        @for (tech of exp.tech; track $index) { @let src = tech + '.png';
-        <img [src]="src" [alt]="tech" width="30" />
-        }
-      </div>
-      }
     </a>
+    }
+    <p class="desc">{{ exp.desc }}</p>
+    @if(exp.tech) {
+    <div class="tech-wrapper">
+      <h3>Tech Stack:</h3>
+      @for (tech of exp.tech; track $index) { @let src = tech + '.png';
+      <img [src]="src" [alt]="tech" width="30" />
+      }
+    </div>
+    }
   </ng-template>
   <ng-template pTemplate="opposite" let-exp>
     <h3>{{ exp.what }}</h3>

@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { TimelineModule } from 'primeng/timeline';
-import { CardModule } from 'primeng/card';
 
 interface ExpItem {
   from: string;
@@ -15,7 +14,7 @@ interface ExpItem {
 @Component({
   selector: 'app-exp',
   standalone: true,
-  imports: [TimelineModule, CardModule],
+  imports: [TimelineModule],
   templateUrl: './exp.component.html',
   styleUrl: './exp.component.scss',
 })
@@ -28,7 +27,7 @@ export class ExpComponent {
         from: 'August, 2024',
         to: 'September, 2024',
         what: 'Train ticket booking application "Chamomile Express"',
-        desc: 'The application was developed by a team using the SCRUM methodology and Jira for task tracking, without the use of external libraries.',
+        desc: 'Train ticket booking application, with authorization feature and management of schedules, car types, stations and trips for administrative access.',
         src: 'train.png',
         link: 'https://train-app.netlify.app/',
         tech: ['angular', 'rxjs', 'ngrx', 'primeng', 'jest'],
