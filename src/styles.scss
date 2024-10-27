@@ -2,6 +2,18 @@
 @import "primeng/resources/themes/aura-light-noir/theme.css";
 @import "primeng/resources/primeng.css";
 
+html,
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.4px;
+}
+
+:root {
+  --font-family: "Raleway", sans-serif;
+}
+
 a {
   text-decoration: none;
   color: inherit;

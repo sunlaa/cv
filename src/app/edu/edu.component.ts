@@ -1,5 +1,11 @@
 import { Component } from '@angular/core';
 import { TimelineModule } from 'primeng/timeline';
+import { ProgressBarModule } from 'primeng/progressbar';
+
+interface Skill {
+  skill: string;
+  value: number;
+}
 
 interface EduItem {
   from: string;
@@ -11,7 +17,7 @@ interface EduItem {
 @Component({
   selector: 'app-edu',
   standalone: true,
-  imports: [TimelineModule],
+  imports: [TimelineModule, ProgressBarModule],
   templateUrl: './edu.component.html',
   styleUrl: './edu.component.scss',
 })
@@ -39,5 +45,17 @@ export class EduComponent {
       to: 'December, 2022',
       what: 'Self-study basic technologies: HTML, CSS',
     },
+  ];
+
+  skills: Skill[] = [
+    { skill: 'Angular', value: 80 },
+    { skill: 'RxJS', value: 60 },
+    { skill: 'NgRx', value: 60 },
+    { skill: 'JavaScript', value: 98 },
+    { skill: 'TypeScript', value: 95 },
+    { skill: 'HTML', value: 98 },
+    { skill: 'CSS (SASS/SCSS)', value: 98 },
+    { skill: 'Jest', value: 30 },
+    { skill: 'Node.js', value: 20 },
   ];
 }

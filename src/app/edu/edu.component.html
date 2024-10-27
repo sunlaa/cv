@@ -1,8 +1,23 @@
+<h1 class="title">Skills and education</h1>
+
+<div class="skills">
+  <h2>Skills</h2>
+
+  @for (skill of skills; track $index) {
+  <div class="skill">
+    <h4>{{ skill.skill }}</h4>
+    <p-progressBar
+      [value]="skill.value"
+      [showValue]="false"
+      [style]="{ height: '6px' }"
+    />
+  </div>
+  }
+</div>
+
 <p-timeline [value]="edu">
   <ng-template pTemplate="marker">
-    <span class="marker" [style]="{ 'background-color': 'black' }">
-      <i class="pi pi-circle-on"></i>
-    </span>
+    <i class="pi pi-circle-on" style="font-size: 0.8em;"></i>
   </ng-template>
   <ng-template pTemplate="content" let-edu>
     <div class="wrap">

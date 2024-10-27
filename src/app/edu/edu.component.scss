@@ -1,24 +1,42 @@
-h3 {
-  margin: 0;
+:host {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  justify-items: center;
+  align-items: center;
 }
 
-p {
-  margin-top: 0.3em;
+.title {
+  grid-column: 1 / span 2;
 }
 
-.cert {
-  color: gray;
-  text-decoration: underline;
+.skills {
+  padding: 1em;
+  width: 100%;
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  .skill {
+    h4 {
+      margin: 0.8em 0;
+    }
+  }
 }
 
 .wrap {
   margin-bottom: 1em;
-}
 
-.marker {
-  color: white;
-  width: 1.5em;
-  height: 1.5em;
-  background-color: black;
-  border-radius: 50%;
+  h3 {
+    margin: 0;
+  }
+
+  p {
+    margin-top: 0.3em;
+  }
+
+  .cert {
+    color: gray;
+    text-decoration: underline;
+  }
 }

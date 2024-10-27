@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { ProgressBarModule } from 'primeng/progressbar';
+import { ButtonModule } from 'primeng/button';
 
 @Component({
   selector: 'app-main',
   standalone: true,
-  imports: [ProgressBarModule],
+  imports: [ButtonModule],
 
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',
