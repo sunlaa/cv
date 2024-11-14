@@ -25,6 +25,11 @@ interface EduItem {
 export class EduComponent {
   edu: EduItem[] = [
     {
+      from: 'October, 2024',
+      to: 'Current time',
+      what: 'Learning Node.js through the Rolling Scope School program',
+    },
+    {
       from: 'July, 2024',
       to: 'September, 2024',
       what: 'Angular Course by Rolling Scope School',
@@ -37,26 +42,21 @@ export class EduComponent {
       certificate: 'https://app.rs.school/certificate/rd5ixhxj',
     },
     {
-      from: 'January, 2023',
-      to: 'October, 2023',
-      what: 'Self-study JavaScript',
-    },
-    {
       from: 'October, 2022',
-      to: 'December, 2022',
-      what: 'Self-study basic technologies: HTML, CSS',
+      to: 'October, 2023',
+      what: 'Self-study JavaScript, HTML, CSS',
     },
   ];
 
   skills: Skill[] = [
-    { skill: 'Angular', value: 80 },
-    { skill: 'RxJS', value: 60 },
-    { skill: 'NgRx', value: 60 },
+    { skill: 'Angular', value: 85 },
+    { skill: 'RxJS', value: 70 },
+    { skill: 'NgRx', value: 70 },
     { skill: 'JavaScript', value: 98 },
     { skill: 'TypeScript', value: 95 },
     { skill: 'HTML', value: 98 },
     { skill: 'CSS (SASS/SCSS)', value: 98 },
-    { skill: 'Jest', value: 30 },
-    { skill: 'Node.js', value: 20 },
+    { skill: 'Jest', value: 40 },
+    { skill: 'Node.js', value: 30 },
   ];
 }

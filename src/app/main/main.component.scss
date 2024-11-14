@@ -3,7 +3,7 @@
   gap: 1em;
   align-items: center;
   justify-content: center;
-  height: 85vh;
+  height: 60vh;
   min-height: 540px;
 }
 
@@ -36,7 +36,11 @@
     i {
       font-size: 1.1em;
     }
-    color: rgb(162, 161, 161);
+
+    :hover {
+      color: #8f8d8d;
+    }
+    color: #a2a1a1;
     display: flex;
     align-items: center;
     gap: 0.8em;

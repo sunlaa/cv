@@ -5,6 +5,7 @@
 }
 
 :host {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -35,7 +36,7 @@
 
 .skills {
   padding: 1em;
-  width: 40%;
+  width: 45%;
   border: solid 0.8px black;
   justify-self: end;
 
