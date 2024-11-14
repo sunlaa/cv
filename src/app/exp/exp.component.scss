@@ -2,6 +2,27 @@
   padding: 0 2em;
 }
 
+::ng-deep {
+  .desc {
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .background-info {
+      font-size: 0.9em;
+      color: gray;
+      display: flex;
+      flex-direction: column;
+      gap: 0.3em;
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
+
 .marker {
   color: var(--primary-color-text);
   width: 1.5em;
@@ -33,8 +54,4 @@ a:hover {
   gap: 0.5em;
   align-items: center;
   margin-bottom: 2em;
-}
-
-.desc {
-  font-weight: 300;
 }

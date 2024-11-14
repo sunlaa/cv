@@ -28,7 +28,14 @@ export class ExpComponent {
         from: 'August, 2024',
         to: 'September, 2024',
         what: 'Train ticket booking application "Chamomile Express"',
-        desc: 'Train ticket booking application, with authorization feature and management of schedules, car types, stations and trips for administrative access.',
+        desc: `
+        <p>Train ticket booking application with appropriate functionality, authorization features, and management of schedules, car types, stations and trips for administrative access.</p>
+        <div class="background-info">
+          <p><b>Admin credentials:</b></p>
+          <p>Login: admin@admin.com</p>
+          <p>Password: my-password</p>
+        </div>
+        `,
         src: 'train.png',
         link: 'https://train-app.netlify.app/',
         tech: ['angular', 'rxjs', 'ngrx', 'primeng', 'jest'],
@@ -36,9 +43,10 @@ export class ExpComponent {
       {
         from: 'May, 2024',
         to: 'June, 2024',
-
         what: 'E-commerce application "Echoes of vinyl"',
-        desc: 'The application was developed by a team using the SCRUM methodology and Jira for task tracking, without the use of external libraries.',
+        desc: `
+        <p>E-commerce app for selling vinyl records and record players.</p>
+        <p>The application was developed in a <b>team</b> using SCRUM methodology and Jira task tracking tools. The <b>commercetools</b> platform was used as API. No third-party libraries were used.</p>`,
         src: 'e-commerce.png',
         link: 'https://echoes-of-vinyl.netlify.app/',
         tech: ['ts', 'wb', 'sass', 'eslint', 'husky', 'jest'],

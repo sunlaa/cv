@@ -15,7 +15,7 @@
       </div>
     </a>
     }
-    <p class="desc">{{ exp.desc }}</p>
+    <div class="desc" [innerHTML]="exp.desc"></div>
     @if(exp.tech) {
     <div class="tech-wrapper">
       <h3>Tech Stack:</h3>
