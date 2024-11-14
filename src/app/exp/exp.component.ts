@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DividerModule } from 'primeng/divider';
 import { TimelineModule } from 'primeng/timeline';
 
 interface ExpItem {
@@ -14,7 +15,7 @@ interface ExpItem {
 @Component({
   selector: 'app-exp',
   standalone: true,
-  imports: [TimelineModule],
+  imports: [TimelineModule, DividerModule],
   templateUrl: './exp.component.html',
   styleUrl: './exp.component.scss',
 })

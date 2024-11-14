@@ -1,5 +1,13 @@
 :host {
+  max-width: 1440px;
+  align-items: center;
   display: flex;
   flex-direction: column;
   gap: 1em;
+}
+
+::ng-deep {
+  .p-timeline-event-connector {
+    width: 1.5px;
+  }
 }

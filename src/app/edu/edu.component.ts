@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { TimelineModule } from 'primeng/timeline';
 import { ProgressBarModule } from 'primeng/progressbar';
+import { DividerModule } from 'primeng/divider';
 
 interface Skill {
   skill: string;
@@ -17,7 +18,7 @@ interface EduItem {
 @Component({
   selector: 'app-edu',
   standalone: true,
-  imports: [TimelineModule, ProgressBarModule],
+  imports: [TimelineModule, ProgressBarModule, DividerModule],
   templateUrl: './edu.component.html',
   styleUrl: './edu.component.scss',
 })

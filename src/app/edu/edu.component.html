@@ -1,4 +1,24 @@
-<h1 class="title">Skills and education</h1>
+<p-divider class="title" align="left" type="solid">
+  <h1>Education and skills</h1>
+</p-divider>
+
+<p-timeline [value]="edu" class="edu-timeline">
+  <ng-template pTemplate="marker">
+    <i class="pi pi-circle-on" style="font-size: 0.8em"></i>
+  </ng-template>
+  <ng-template pTemplate="content" let-edu>
+    <div class="edu-wrap">
+      <h3>{{ edu.what }}</h3>
+
+      <p class="p-text-secondary">{{ edu.from }} - {{ edu.to }}</p>
+      @if (edu.certificate) {
+      <a [href]="edu.certificate" target="_blank" class="cert">
+        <small>Certificate</small>
+      </a>
+      }
+    </div>
+  </ng-template>
+</p-timeline>
 
 <div class="skills">
   <h2>Skills</h2>
@@ -14,21 +34,3 @@
   </div>
   }
 </div>
-
-<p-timeline [value]="edu">
-  <ng-template pTemplate="marker">
-    <i class="pi pi-circle-on" style="font-size: 0.8em;"></i>
-  </ng-template>
-  <ng-template pTemplate="content" let-edu>
-    <div class="wrap">
-      <h3>{{ edu.what }}</h3>
-
-      <p class="p-text-secondary">{{ edu.from }} - {{ edu.to }}</p>
-      @if (edu.certificate) {
-      <a [href]="edu.certificate" target="_blank" class="cert">
-        <small>Certificate</small>
-      </a>
-      }
-    </div>
-  </ng-template>
-</p-timeline>

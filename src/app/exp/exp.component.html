@@ -1,8 +1,11 @@
+<p-divider class="title" align="left" type="solid">
+  <h1>Practical experience</h1>
+</p-divider>
+
+
 <p-timeline [value]="exp">
   <ng-template pTemplate="marker">
-    <span class="marker" [style]="{ 'background-color': 'black' }">
       <i class="pi pi-circle-on"></i>
-    </span>
   </ng-template>
   <ng-template pTemplate="content" let-exp>
     @if (exp.src) {
