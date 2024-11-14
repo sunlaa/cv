@@ -1,0 +1,106 @@
+<div class="main-info">
+  <img class="avatar" src="avatar.jpg" alt="Avatar" />
+
+  <div class="contacts">
+    <div class="badges">
+      <a
+        class="link"
+        href="https://www.linkedin.com/in/sunlaa/"
+        target="_blank"
+      >
+        <i class="pi pi-linkedin"></i>
+        <p>Uladzislava Santalava</p>
+      </a>
+      <a class="link" href="mailto:santalova.lada25@gmail.com" target="_blank">
+        <span style="font-size: 1.3em" class="material-icons">mail</span>
+        <p>santalova.lada25&#64;gmail.com</p>
+      </a>
+      <a class="link" href="https://github.com/sunlaa" target="_blank">
+        <i class="pi pi-github"></i>
+        <p>sunlaa</p>
+      </a>
+      <a class="link" href="tel:+48789632433" target="_blank">
+        <span style="font-size: 1.3em" class="material-icons">call</span>
+        <p>48789632433</p>
+      </a>
+      <a class="link" href="https://t.me/sunlaa" target="_blank">
+        <i class="pi pi-telegram"></i>
+        <p>&#64;sunlaa</p>
+      </a>
+    </div>
+  </div>
+  <div class="skills">
+    <h2>Skills</h2>
+
+    @for (skill of skills; track $index) {
+    <div class="skill">
+      <h4>{{ skill.skill }}</h4>
+      <p-progressBar
+        [value]="skill.value"
+        [showValue]="false"
+        [style]="{ height: '6px' }"
+      />
+    </div>
+    }
+  </div>
+</div>
+<div class="description">
+  <div class="intro">
+    <div class="title">
+      <h1>Uladzislava Santalava</h1>
+      <h2>Angular Frontend developer</h2>
+    </div>
+
+    <p>
+      As a Frontend Developer with 2 years of hands-on experience during my
+      studies, I have a solid understanding of JavaScript and TypeScript. I have
+      experience developing applications in a team environment, using modern
+      development methodologies and task tracking tools. I specialize in
+      building SPAs using Angular, NgRx and RxJS. I also have a basic knowledge
+      of Node.js and am currently continuing to learn it.
+    </p>
+  </div>
+
+  <div class="edu">
+    <p-divider class="title" align="left" type="solid">
+      <h1>Education</h1>
+    </p-divider>
+
+    <p-timeline [value]="edu" class="edu-timeline">
+      <ng-template pTemplate="marker">
+        <i class="pi pi-circle-on" style="font-size: 0.8em"></i>
+      </ng-template>
+      <ng-template pTemplate="content" let-edu>
+        <div class="edu-wrap">
+          <h3>{{ edu.what }}</h3>
+
+          <p class="p-text-secondary">{{ edu.from }} - {{ edu.to }}</p>
+          @if (edu.certificate) {
+          <a [href]="edu.certificate" target="_blank" class="cert">
+            <small>Certificate</small>
+          </a>
+          }
+        </div>
+      </ng-template>
+    </p-timeline>
+  </div>
+  <div class="projects">
+    <p-divider class="title" align="left" type="solid">
+      <h1>Practical experience</h1>
+    </p-divider>
+
+    <p-timeline [value]="exp" class="exp-timeline">
+      <ng-template pTemplate="marker">
+        <i class="pi pi-circle-on" ></i>
+      </ng-template>
+      <ng-template pTemplate="opposite" let-exp>
+        <div class="exp-wrap">
+          <h3>{{ exp.what }}</h3>
+          <p class="p-text-secondary">{{ exp.from }} - {{ exp.to }}</p>
+          <div class="desc" [innerHTML]="exp.desc"></div>
+          <a [href]="exp.link" target="_blank">View</a>
+        </div>
+      </ng-template>
+    </p-timeline>
+  </div>
+</div>

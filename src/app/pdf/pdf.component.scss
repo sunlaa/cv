@@ -1,0 +1,144 @@
+:host {
+  display: flex;
+  gap: 2em;
+  width: 210mm;
+  height: 297mm;
+  padding: 10mm;
+  font-size: 0.7em;
+}
+
+::ng-deep {
+  .edu-timeline .p-timeline-event-opposite {
+    display: none;
+  }
+  .exp-timeline .p-timeline-event-content {
+    display: none;
+  }
+
+  .projects .list {
+    list-style-position: inside;
+
+    h4 {
+      margin: 0;
+    }
+  }
+}
+
+.main-info {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+  .avatar {
+    width: 100%;
+    border-radius: 0.5em;
+  }
+
+  .badges {
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+
+    p {
+      margin: 0;
+      font-size: 1.1em;
+    }
+
+    a {
+      display: flex;
+      gap: 0.3em;
+      align-items: center;
+      transition: all linear 100ms;
+    }
+
+    i {
+      font-size: 1.2em;
+    }
+  }
+
+  .skills {
+    padding: 0.9em;
+    border: solid 0.8px black;
+
+    h2 {
+      margin: 0 0 0.4em 0;
+    }
+
+    .skill {
+      h4 {
+        margin: 0.7em 0;
+      }
+    }
+  }
+}
+
+.description {
+  .intro {
+    .title {
+      font-size: 0.9em;
+      border-bottom: solid 0.5px black;
+    }
+    h1 {
+      margin: 0;
+    }
+
+    h2 {
+      margin: 0.3em 0;
+    }
+  }
+
+  .edu {
+    .title h1 {
+      font-size: 1.3em;
+    }
+    .edu-wrap {
+      font-size: 0.8em;
+
+      h3 {
+        margin: 0;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      .cert {
+        color: gray;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .projects {
+    .title h1 {
+      font-size: 1.3em;
+    }
+
+    .tech-wrapper {
+      display: inline-flex;
+      gap: 0.5em;
+      align-items: center;
+      margin-bottom: 2em;
+    }
+
+    .exp-wrap {
+      font-size: 0.8em;
+      margin-bottom: 2em;
+
+      a {
+        color: #969696;
+        text-decoration: underline;
+      }
+
+      h3 {
+        margin: 0;
+      }
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
