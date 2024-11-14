@@ -45,8 +45,7 @@ export class ExpComponent {
         to: 'June, 2024',
         what: 'E-commerce application "Echoes of vinyl"',
         desc: `
-        <p>E-commerce app for selling vinyl records and record players.</p>
-        <p>The application was developed in a <b>team</b> using SCRUM methodology and Jira task tracking tools. The <b>commercetools</b> platform was used as API. No third-party libraries were used.</p>`,
+        <p>E-commerce app for selling vinyl records and record players. The application was developed in a <b>team</b> using SCRUM methodology and Jira task tracking tools. The <b>commercetools</b> platform was used as API. No third-party libraries were used.</p>`,
         src: 'e-commerce.png',
         link: 'https://echoes-of-vinyl.netlify.app/',
         tech: ['ts', 'wb', 'sass', 'eslint', 'husky', 'jest'],

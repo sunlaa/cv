@@ -11,7 +11,7 @@
     @if (exp.src) {
     <a [href]="exp.link" target="_blank">
       <div class="img-wrapper">
-        <img class="exp-img" [src]="exp.src" alt="" />
+        <img class="exp-img" [src]="exp.src" [alt]="exp.what" />
       </div>
     </a>
     }

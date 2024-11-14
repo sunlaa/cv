@@ -1,0 +1,25 @@
+<p-divider class="title" align="left" type="solid">
+  <h1>Projects</h1>
+</p-divider>
+
+<p-carousel
+  [value]="projects"
+  [numVisible]="2"
+  [numScroll]="2"
+  [circular]="false"
+>
+  <ng-template let-project pTemplate="item">
+    <div class="item">
+      <h2>{{ project.title }}</h2>
+      <div class="item-info">
+        <a [href]="project.link" target="_blank">
+          <img [src]="project.src" [alt]="project.title" class="slide-img" />
+        </a>
+        <p>{{ project.desc }}</p>
+        @if (project.serverLink) {
+        <a class="server-link" [href]="project.serverLink">Server link</a>
+        }
+      </div>
+    </div>
+  </ng-template>
+</p-carousel>
