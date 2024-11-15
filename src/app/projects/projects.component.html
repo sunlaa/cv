@@ -16,6 +16,12 @@
           <img [src]="project.src" [alt]="project.title" class="slide-img" />
         </a>
         <p>{{ project.desc }}</p>
+        <p>
+          <b>Tech stack:</b>
+          @for (item of project.stack; track $index) {
+          {{ item }}{{ $index < project.stack.length - 1 ? "," : "." }}
+          }
+        </p>
         @if (project.serverLink) {
         <a class="server-link" [href]="project.serverLink">Server link</a>
         }
