@@ -50,10 +50,10 @@ export class EduComponent {
 
   skills: Skill[] = [
     { skill: 'Angular', value: 85 },
-    { skill: 'RxJS', value: 70 },
-    { skill: 'NgRx', value: 70 },
     { skill: 'JavaScript', value: 98 },
     { skill: 'TypeScript', value: 95 },
+    { skill: 'RxJS', value: 70 },
+    { skill: 'NgRx', value: 70 },
     { skill: 'HTML', value: 98 },
     { skill: 'CSS (SASS/SCSS)', value: 98 },
     { skill: 'Jest', value: 40 },

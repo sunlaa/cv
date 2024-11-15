@@ -2,10 +2,9 @@
   <h1>Practical experience</h1>
 </p-divider>
 
-
 <p-timeline [value]="exp">
   <ng-template pTemplate="marker">
-      <i class="pi pi-circle-on"></i>
+    <i class="pi pi-circle-on"></i>
   </ng-template>
   <ng-template pTemplate="content" let-exp>
     @if (exp.src) {
@@ -14,9 +13,12 @@
         <img class="exp-img" [src]="exp.src" [alt]="exp.what" />
       </div>
     </a>
-    }
     <div class="desc" [innerHTML]="exp.desc"></div>
-    @if(exp.tech) {
+    } @if (!exp.src) {
+    <a [href]="exp.link" class="link">
+      {{ exp.desc }}
+    </a>
+    } @if(exp.tech) {
     <div class="tech-wrapper">
       <h3>Tech Stack:</h3>
       @for (tech of exp.tech; track $index) { @let src = tech + '.png';

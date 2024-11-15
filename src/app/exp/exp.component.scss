@@ -11,7 +11,7 @@
 
     .background-info {
       font-size: 0.9em;
-      color: gray;
+      color: #64748b;
       display: flex;
       flex-direction: column;
       gap: 0.3em;
@@ -44,6 +44,11 @@
 
 a:hover .exp-img {
   box-shadow: 1px 2px 6px #646464;
+}
+
+.link {
+  color: #64748b;
+  text-decoration: underline;
 }
 
 .tech-wrapper {

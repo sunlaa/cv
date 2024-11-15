@@ -35,10 +35,10 @@ interface ExpItem {
 export class PdfComponent {
   skills: Skill[] = [
     { skill: 'Angular', value: 85 },
-    { skill: 'RxJS', value: 70 },
-    { skill: 'NgRx', value: 70 },
     { skill: 'JavaScript', value: 98 },
     { skill: 'TypeScript', value: 95 },
+    { skill: 'RxJS', value: 70 },
+    { skill: 'NgRx', value: 70 },
     { skill: 'HTML', value: 98 },
     { skill: 'CSS (SASS/SCSS)', value: 98 },
     { skill: 'Jest', value: 40 },
@@ -76,7 +76,7 @@ export class PdfComponent {
       to: 'September, 2024',
       what: 'Train ticket booking application "Chamomile Express"',
       desc: `
-      <p>Train ticket sales application developed as part of the final project of the training course. The application was developed in a team using SCRUM methodology.</p>
+      <p>Train ticket sales application developed as part of the final project of the Angular course. The application was developed in a team using SCRUM methodology.</p>
       <ul class="list">
         <h4>Main features:</h4>
         <li><i>User authentication and account management</i></li>
@@ -101,7 +101,7 @@ export class PdfComponent {
         <li><i>User authentication with secure access token handling</i></li>
         <li><i>Product catalog with advanced filters</i></li>
         <li><i>Shopping cart for managing selected items</i></li>
-        <li><i>Integration with commercetools platform for e-commerce functionality</i></li>
+        <li><i>Integration with "commercetools" platform for e-commerce functionality</i></li>
       </ul>
       <p><b>Tech stack:</b> TypeScript, Webpack, SASS, ESLint, Husky, Jest</p>
       `,

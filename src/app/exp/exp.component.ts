@@ -31,9 +31,7 @@ export class ExpComponent {
         desc: `
         <p>Train ticket booking application with appropriate functionality, authorization features, and management of schedules, car types, stations and trips for administrative access.</p>
         <div class="background-info">
-          <p><b>Admin credentials:</b></p>
-          <p>Login: admin@admin.com</p>
-          <p>Password: my-password</p>
+          <p><b>Admin credentials:</b> admin@admin.com - my-password</p>
         </div>
         `,
         src: 'train.png',
@@ -45,7 +43,7 @@ export class ExpComponent {
         to: 'June, 2024',
         what: 'E-commerce application "Echoes of vinyl"',
         desc: `
-        <p>E-commerce app for selling vinyl records and record players. The application was developed in a <b>team</b> using SCRUM methodology and Jira task tracking tools. The <b>commercetools</b> platform was used as API. No third-party libraries were used.</p>`,
+        <p>E-commerce app for selling vinyl records and record players. The application was developed in a team using SCRUM methodology and Jira task tracking tools. The "commercetools" platform was used as API. No third-party libraries were used.</p>`,
         src: 'e-commerce.png',
         link: 'https://echoes-of-vinyl.netlify.app/',
         tech: ['ts', 'wb', 'sass', 'eslint', 'husky', 'jest'],

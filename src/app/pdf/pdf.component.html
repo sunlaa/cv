@@ -3,6 +3,14 @@
 
   <div class="contacts">
     <div class="badges">
+      <a class="link">
+        <span style="font-size: 1.5em" class="material-icons">person</span>
+        <p>25.03.2003</p>
+      </a>
+      <a class="link">
+        <span style="font-size: 1.5em" class="material-icons">location_on</span>
+        <p>Poland, Warsaw</p>
+      </a>
       <a
         class="link"
         href="https://www.linkedin.com/in/sunlaa/"
@@ -11,6 +19,7 @@
         <i class="pi pi-linkedin"></i>
         <p>Uladzislava Santalava</p>
       </a>
+
       <a class="link" href="mailto:santalova.lada25@gmail.com" target="_blank">
         <span style="font-size: 1.3em" class="material-icons">mail</span>
         <p>santalova.lada25&#64;gmail.com</p>
@@ -86,12 +95,12 @@
   </div>
   <div class="projects">
     <p-divider class="title" align="left" type="solid">
-      <h1>Practical experience</h1>
+      <h1>Team projects</h1>
     </p-divider>
 
     <p-timeline [value]="exp" class="exp-timeline">
       <ng-template pTemplate="marker">
-        <i class="pi pi-circle-on" ></i>
+        <i class="pi pi-circle-on"></i>
       </ng-template>
       <ng-template pTemplate="opposite" let-exp>
         <div class="exp-wrap">

@@ -9,4 +9,8 @@ import { ButtonModule } from 'primeng/button';
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',
 })
-export class MainComponent {}
+export class MainComponent {
+  toProjects() {
+    document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+  }
+}
