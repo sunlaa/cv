@@ -2,33 +2,37 @@
   <h1>Practical experience</h1>
 </p-divider>
 
-<p-timeline [value]="exp">
+<p-timeline [value]="exp" class="timeline">
   <ng-template pTemplate="marker">
     <i class="pi pi-circle-on"></i>
   </ng-template>
   <ng-template pTemplate="content" let-exp>
-    @if (exp.src) {
-    <a [href]="exp.link" target="_blank">
-      <div class="img-wrapper">
-        <img class="exp-img" [src]="exp.src" [alt]="exp.what" />
+    <div class="right">
+      @if (exp.src) {
+      <a [href]="exp.link" target="_blank">
+        <div class="img-wrapper">
+          <img class="exp-img" [src]="exp.src" [alt]="exp.what" />
+        </div>
+      </a>
+      <div class="desc" [innerHTML]="exp.desc"></div>
+      } @if (!exp.src) {
+      <a [href]="exp.link" class="link">
+        {{ exp.desc }}
+      </a>
+      } @if(exp.tech) {
+      <div class="tech-wrapper">
+        <h3>Tech Stack:</h3>
+        @for (tech of exp.tech; track $index) { @let src = tech + '.png';
+        <img [src]="src" [alt]="tech" width="30" />
+        }
       </div>
-    </a>
-    <div class="desc" [innerHTML]="exp.desc"></div>
-    } @if (!exp.src) {
-    <a [href]="exp.link" class="link">
-      {{ exp.desc }}
-    </a>
-    } @if(exp.tech) {
-    <div class="tech-wrapper">
-      <h3>Tech Stack:</h3>
-      @for (tech of exp.tech; track $index) { @let src = tech + '.png';
-      <img [src]="src" [alt]="tech" width="30" />
       }
     </div>
-    }
   </ng-template>
   <ng-template pTemplate="opposite" let-exp>
-    <h3>{{ exp.what }}</h3>
-    <p class="p-text-secondary">{{ exp.from }} - {{ exp.to }}</p>
+    <div class="left">
+      <h3>{{ exp.what }}</h3>
+      <p class="p-text-secondary">{{ exp.from }} - {{ exp.to }}</p>
+    </div>
   </ng-template>
 </p-timeline>
